@@ -1,12 +1,15 @@
 ---
-title: "About"
+title: "Vrinda Patil"
 image: profile.jpg
 about:
   template: jolla
   links:
     - icon: github
-      text: Github
-      href: https://github.com/etc5523-2022
+      text: GitHub
+      href: https://github.com/vpat0051
+    - icon: envelope
+      text: Email
+      href: mailto:vpat0051@student.monash.edu
 
 ---
 
