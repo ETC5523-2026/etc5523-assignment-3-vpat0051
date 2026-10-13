@@ -1,4 +1,34 @@
-/* css styles */
-.navbar-dark, .quarto-title-banner {
-  background-color: #006DAE;
+/* page background and body text */
+body {
+  background-color: #F7F5F0;
+  color: #2B2B2B;
+}
+
+/* navbar and title banner */
+.navbar, .navbar-dark, .quarto-title-banner {
+  background-color: #1F3A5F !important;
+}
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #FFFFFF !important;
+}
+.navbar .nav-link:hover {
+  color: #F2B84B !important;
+}
+
+/* headings */
+h1, h2, h3, h4 {
+  color: #1F3A5F;
+  font-weight: 700;
+}
+h2 {
+  border-bottom: 2px solid #F2B84B;
+  padding-bottom: 0.2rem;
+}
+
+/* links */
+a {
+  color: #0B7A75;
+}
+a:hover {
+  color: #085955;
 }
