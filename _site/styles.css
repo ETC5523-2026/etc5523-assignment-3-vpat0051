@@ -32,3 +32,15 @@ a {
 a:hover {
   color: #085955;
 }
+
+/* banner heading must be readable on navy */
+.quarto-title-banner .title,
+.quarto-title-banner h1,
+.quarto-title-banner .quarto-categories .quarto-category {
+  color: #FFFFFF !important;
+}
+.quarto-title-banner .subtitle,
+.quarto-title-banner .description,
+.quarto-title-banner .quarto-title-meta {
+  color: #E8E8E8 !important;
+}

@@ -6,10 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Emi Tanaka">
-<meta name="dcterms.date" content="2022-07-18">
+<meta name="author" content="Vrunda Patil">
+<meta name="dcterms.date" content="2026-10-13">
+<meta name="description" content="A plain-English explanation of why the Delta variant changed what border quarantine could do.">
 
-<title>Welcome To My Blog Template – blog-template</title>
+<title>Why Delta Broke Quarantine’s Safety Net – Vrunda Patil | Data Stories</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -85,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">blog-template</span>
+    <span class="navbar-title">Vrunda Patil | Data Stories</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -96,10 +116,10 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">Vrunda Patil</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/etc5523-2022"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/vpat0051"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -114,9 +134,17 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog Template</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+      <h1 class="title">Why Delta Broke Quarantine’s Safety Net</h1>
+            <p class="subtitle lead">What a simulation study says about vaccines, borders and the 60% line</p>
+                  <div>
+        <div class="description">
+          A plain-English explanation of why the Delta variant changed what border quarantine could do.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">COVID-19</div>
+                <div class="quarto-category">border quarantine</div>
+                <div class="quarto-category">modelling</div>
               </div>
                   </div>
   </div>
@@ -127,14 +155,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Emi Tanaka </p>
+               <p>Vrunda Patil </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 18, 2022</p>
+        <p class="date">October 13, 2026</p>
       </div>
     </div>
     
@@ -153,10 +181,109 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
+<section id="the-problem-could-quarantine-keep-working-once-delta-arrived" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-could-quarantine-keep-working-once-delta-arrived">The problem: could quarantine keep working once Delta arrived?</h2>
+<p>For most of 2020 and 2021, Australia’s border strategy was simple. Keep the virus out, and put every arrival through 14 days of quarantine. It worked, but it came at a cost: stranded citizens, grounded airlines, and universities and tourism operators under heavy strain.</p>
+<p>Then two things changed. Vaccines arrived, which raised the question of whether vaccinated travellers could skip some quarantine. And Delta arrived, a variant that spread more easily and was harder for vaccines to stop from infecting people. Together, these forced a hard question: how well would vaccines need to work, and how many people would need to be vaccinated, for quarantine-based reopening to stay safe?</p>
+<p>Zachreson and colleagues <span class="citation" data-cites="zachreson2022">(<a href="#ref-zachreson2022" role="doc-biblioref">2022</a>)</span> built computer simulations to answer exactly that. This post explains what they found.</p>
+</section>
+<section id="the-evidence-a-simulation-built-on-real-breach-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-evidence-a-simulation-built-on-real-breach-data">The evidence: a simulation built on real breach data</h2>
+<p>The study does not follow real patients. It simulates a quarantine facility holding 100 travellers for 14 days, with tests on days 3 and 12 and 20 vaccinated staff on site. A second model then estimates whether one escape from quarantine could grow into a community outbreak.</p>
+<p>The simulation is grounded in real events. The authors calibrated it with publicly reported Australian quarantine breach data from covidlive.com.au, and they checked their assumptions with state health departments. They then ran it across a wide range of conditions: virus contagiousness from 1 to 10 and vaccine efficacy from 0% to 90%.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Three terms you will see
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>R0</strong>: how many people one infected person passes the virus to, on average. Higher means more contagious.</li>
+<li><strong>Vaccine efficacy</strong>: how well a vaccine stops infection. 60% efficacy means it blocks 60 in every 100 infections.</li>
+<li><strong>t50</strong>: the number of days until there is a 50-50 chance that an outbreak starts in the community.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="what-the-evidence-shows" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-evidence-shows">What the evidence shows</h2>
+<p><strong>A more contagious virus demands better vaccines.</strong> Before Delta, with an R0 of about 3, quarantine kept the risk of a breach at a baseline level with no vaccine protection needed. Delta’s R0 was in the range of 6 to 8. To hold the breach risk at that same baseline, vaccine efficacy had to rise above 60% at an R0 of 6 and above 70% at an R0 of 8 (<a href="#fig-vaccine-needed" class="quarto-xref">Figure&nbsp;1</a>). Beyond an R0 of 8, the requirement levelled off at around 70 to 80%, partly because travellers are quarantined in small family groups, which limits spread inside the facility.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-vaccine-needed" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Line chart. As R0 rises from 3 to 6 to 8, the vaccine efficacy needed rises from 0% to above 60% to above 70%, then levels off at about 70 to 80%. The Delta range of 6 to 8 is shaded.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-vaccine-needed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-vaccine-needed-1.png" class="img-fluid figure-img" alt="Line chart. As R0 rises from 3 to 6 to 8, the vaccine efficacy needed rises from 0% to above 60% to above 70%, then levels off at about 70 to 80%. The Delta range of 6 to 8 is shaded." width="768">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-vaccine-needed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The more contagious the virus, the better vaccines must work to keep quarantine breach risk at pre-Delta levels. Minimum values as reported in Zachreson et al.&nbsp;(2022).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>That finding explains why Delta mattered, but breaches also depend on how long the community stays protected. Quarantine will occasionally fail, so the second question is whether a failure turns into an outbreak. The authors measured this with t50. With no extra vaccine protection, a community outbreak had a 50% chance of starting within about 15 days. Vaccines with efficacy below roughly 60% changed little, even when many people were vaccinated. But once both efficacy and coverage passed 80%, t50 stretched beyond 1,000 days, more than 60 times longer (<a href="#tbl-outbreak-time" class="quarto-xref">Table&nbsp;1</a>).</p>
+<div class="cell">
+<div id="tbl-outbreak-time" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-outbreak-time-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Weak vaccine protection barely delays an outbreak, but strong protection delays it enormously. Source: Zachreson et al.&nbsp;(2022).
+</figcaption>
+<div aria-describedby="tbl-outbreak-time-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 56%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Scenario</th>
+<th style="text-align: left;">Time until an outbreak has a 50% chance of starting</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Baseline: no extra vaccine protection</td>
+<td style="text-align: left;">About 15 days</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Vaccine efficacy below about 60% (even with many people vaccinated)</td>
+<td style="text-align: left;">Very little change</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Vaccine efficacy above 80% and more than 80% of people vaccinated</td>
+<td style="text-align: left;">More than 1,000 days</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>The pattern is a threshold, not a slope. Partial protection buys little, and strong protection buys a great deal. Real-world vaccines generally blocked Delta infection less well than the 80 to 90% range, which is why quarantine alone could no longer cover for gaps in community vaccination.</p>
+</section>
+<section id="what-this-means" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-means">What this means</h2>
+<p>So, could quarantine keep working against Delta? Only with help. Delta lifted the vaccine efficacy needed to hold the line from 0% to somewhere above 60 to 70%, and a large safety margin needed both efficacy and coverage above 80%. Quarantine and vaccination worked as a pair, not as substitutes for each other.</p>
+<p>For you as a reader, the takeaway is practical. When someone says vaccinated travellers can skip quarantine, ask what vaccine efficacy and coverage that claim assumes. The answer decides whether the plan is safe.</p>
+<p>One caution applies throughout. These numbers come from a simulation, so they are only as reliable as its assumptions. The authors tested alternative assumptions, including shorter incubation periods and weaker infection control, but the model leaves out factors such as age and prior immunity. Treat the results as a guide to the size of the challenge, not exact predictions.</p>
+</section>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-zachreson2022" class="csl-entry" role="listitem">
+<span class="nocase">Zachreson, Cameron, Freya M. Shearer, David J. Price, et al.</span> 2022. <span>“COVID-19 in Low-Tolerance Border Quarantine Systems: Impact of the Delta Variant of SARS-CoV-2.”</span> <em>Science Advances</em> 8 (14): eabm3624. <a href="https://doi.org/10.1126/sciadv.abm3624">https://doi.org/10.1126/sciadv.abm3624</a>.
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
