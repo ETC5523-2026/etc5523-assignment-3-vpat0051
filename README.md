@@ -1,5 +1,7 @@
 # Vrunda Patil | Data Stories
 
+**Live site:** https://etc5523-2026.github.io/etc5523-assignment-3-vpat0051/
+
 Personal website and blog post for ETC5523 Communicating with Data (Assignment 3), Monash University.
 
 **Author:** Vrunda Patil
