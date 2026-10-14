@@ -1,13 +1,20 @@
 ---
-title: "About"
+title: "Vrunda Patil"
 image: profile.jpg
 about:
   template: jolla
   links:
     - icon: github
-      text: Github
-      href: https://github.com/etc5523-2022
+      text: GitHub
+      href: https://github.com/vpat0051
+    - icon: envelope
+      text: Email
+      href: mailto:vpat0051@student.monash.edu
 
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+I'm a Master of Business Analytics student at Monash University. Before moving to Melbourne, I studied Information Technology engineering in Mumbai, where I got into web development and data science projects.
+
+I like turning messy data into something people can actually use to make a decision. I'm also curious about entrepreneurship, so I enjoy work where analysis connects to real business questions.
+
+This site is where I share my data stories for ETC5523 Communicating with Data.

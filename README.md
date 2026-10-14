@@ -1,6 +1,15 @@
+# Vrunda Patil | Data Stories
 
-# ETC5523 Blog Assessment
+**Live site:** https://etc5523-2026.github.io/etc5523-assignment-3-vpat0051/
 
-* This is a **template** for the ETC5523 Blog Assessment. 
-* The author of this blog is **Michael Lydeamore**.
-* The URL for this blog is [https://etc5523-2023.github.io/blog-template/](https://etc5523-2023.github.io/blog-template/)
+Personal website and blog post for ETC5523 Communicating with Data (Assignment 3), Monash University.
+
+**Author:** Vrunda Patil
+
+## Audience statement
+
+This post is written for everyday Australian adults who lived through the border closures and want a plain-English explanation of why Delta changed what quarantine could do.
+
+## AI-use declaration
+
+I used Claude for planning, drafting text, R code, CSS and the design of the figure and table. I checked the numbers against Zachreson et al. (2022) and my Assignment 2 report.
